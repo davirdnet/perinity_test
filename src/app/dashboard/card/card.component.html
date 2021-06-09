@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+  <mat-card-header class="container-title">
+    <mat-card-title class="title">{{card.name}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="card.pic" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{card.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button [color]="colorButton" (click)="onLike(card)">LIKE {{card.likes}}</button>
+    <button mat-raised-button><a href="https://www.linkedin.com/in/davi-ribeiro-dias-b1abb04a/" target="_blank">SHARE</a></button>
+  </mat-card-actions>
+</mat-card>

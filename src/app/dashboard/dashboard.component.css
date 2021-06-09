@@ -1,0 +1,54 @@
+
+    app-card {
+        box-shadow: black 0.2em 0.2em 2em;
+        border-radius: 6px;
+        max-width: 400px;
+        min-height: 550px;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .container {
+        width: 90vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+@media screen and (min-width: 1280px) {
+
+    div {
+        margin: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+
+    div {
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+
+    div {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+}
